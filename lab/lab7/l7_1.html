@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таблица автосервиса</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th {
+            background: #a52a2a;
+            color: white;
+            padding: 10px;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        
+        /* Нечетные строки */
+        tr:nth-child(odd) {
+            background: #fffff0;
+        }
+        
+        /* Четные строки */
+        tr:nth-child(even) {
+            background: #fff8dc;
+        }
+        
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Список услуг автосервиса</h2>
+
+    <table>
+        <tr>
+            <th>Услуга</th>
+            <th>Цена</th>
+            <th>Время</th>
+        </tr>
+        <tr>
+            <td>Замена масла</td>
+            <td>1500 руб.</td>
+            <td>30 мин</td>
+        </tr>
+        <tr>
+            <td>Диагностика</td>
+            <td>2000 руб.</td>
+            <td>1 час</td>
+        </tr>
+        <tr>
+            <td>Шиномонтаж</td>
+            <td>1000 руб.</td>
+            <td>40 мин.</td>
+        </tr>
+        <tr>
+            <td>Ремонт тормозов</td>
+            <td>3000 руб.</td>
+            <td>2 часа</td>
+        </tr>
+        <tr>
+            <td>Чистка форсунок</td>
+            <td>2500 руб.</td>
+            <td>1.5 часа</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Запись в автосервис</title>
+</head>
+<body>
+    <h2>Запись в автосервис</h2>
+
+    <form>
+        <p>ФИО: <input type="text" required></p>
+        
+        <p>Телефон: <input type="tel" required></p>
+        
+        <p>Марка авто: <input type="text" required></p>
+        
+        <p>Услуга:
+            <select required>
+                <option value="">Выберите</option>
+                <option>Диагностика</option>
+                <option>Замена масла</option>
+                <option>Ремонт</option>
+            </select>
+        </p>
+        
+        <p>Дата: <input type="date" required></p>
+        
+        <p>Проблема:<br>
+            <textarea rows="3" cols="40"></textarea>
+        </p>
+        
+        <button type="submit">Записаться</button>
+        <button type="reset">Очистить</button>
+    </form>
+</body>
+</html>

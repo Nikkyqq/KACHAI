@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таблицы автосервиса</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+            width: 400px;
+        }
+        
+        td {
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .table1 { background: #ffe6e6; }
+        .table2 { background: #e6ffe6; }
+        .table3 { background: #e6e6ff; }
+        .table4 { background: #ffffe6; }
+    </style>
+</head>
+<body>
+    <h2>Таблицы автосервиса</h2>
+
+    <!-- Таблица 1 -->
+    <h3>Отделы автосервиса</h3>
+    <table class="table1">
+        <tr>
+            <td colspan="3">Автосервис "СТО"</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Ремонт</td>
+            <td>Двигатели</td>
+            <td>Кузова</td>
+        </tr>
+        <tr>
+            <td>Электрика</td>
+            <td>Подвеска</td>
+        </tr>
+    </table>
+
+    <!-- Таблица 2 -->
+    <h3>Специалисты</h3>
+    <table class="table2">
+        <tr>
+            <td rowspan="3">Механики</td>
+            <td colspan="2">Опыт работы</td>
+        </tr>
+        <tr>
+            <td>Старшие</td>
+            <td rowspan="2">5+ лет</td>
+        </tr>
+        <tr>
+            <td>Младшие</td>
+        </tr>
+    </table>
+
+    <!-- Таблица 3 -->
+    <h3>График работ</h3>
+    <table class="table3">
+        <tr>
+            <td>Утро</td>
+            <td rowspan="2">Диагностика</td>
+            <td>Запись</td>
+        </tr>
+        <tr>
+            <td rowspan="2">День</td>
+            <td>Ремонт</td>
+        </tr>
+        <tr>
+            <td>Вечер</td>
+            <td>Сдача</td>
+        </tr>
+    </table>
+
+    <!-- Таблица 4 -->
+    <h3>Услуги и цены</h3>
+    <table class="table4">
+        <tr>
+            <td rowspan="2">Двигатель</td>
+            <td colspan="2">Стоимость</td>
+            <td rowspan="3">Гарантия</td>
+        </tr>
+        <tr>
+            <td>Капремонт</td>
+            <td rowspan="2">50000₽</td>
+        </tr>
+        <tr>
+            <td>Текущий</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №2 - Ссылки и навигация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .back-to-top {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Творчество Михаила Круга</h1>
+        
+        <!-- Навигационное меню -->
+        <nav>
+            <ul>
+                <li><a href="#biography">Биография</a></li>
+                <li><a href="#filmography">Фильмография</a></li>
+                <li><a href="discography.html">Дискография</a></li>
+                <li><a href="songs.html">тексты песен</a></li>
+                <li><a href="vizitka.html" target="_blank">Визитка сайта</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Раздел с якорем -->
+        <section id="biography">
+            <h2>Биография</h2>
+            <blockquote>
+                Михаил Воробьев, более известный как Михаил Круг, родился 7 апреля 1962 года в Калинине (ныне Тверь). Он рос в интеллигентной советской семье: отец, Владимир Михайлович, трудился на должности инженера-строителя, а мать, Зоя Петровна, работала бухгалтером на хлопчатобумажном комбинате. Мальчика назвали в честь деда-фронтовика. В детстве он мечтал стать шофером и водить машину.
+Юноша увлекался музыкой, ему нравились песни Владимира Высоцкого. Получив в подарок от родителей гитару, он вскоре выступал перед дворовыми ребятами с песнями.
+            </blockquote>
+            <a href="#" class="back-to-top">↑ Наверх</a>
+        </section>
+
+        <!-- Раздел с якорем -->
+        <section id="filmography">
+            <h2>Фильмография</h2>
+            <p>Михаил Круг не был актером, но про его жизнь был снят мини-сериал:</p>
+            <ul>
+                <li><strong>Легенды о круге</strong> (2011)</li>
+            </ul>
+            <a href="#" class="back-to-top">↑ Наверх</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Сайт о творчестве М.Круга. Все права защищены.</p>
+    </footer>
+</body>
+</html>

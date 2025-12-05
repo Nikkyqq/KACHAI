@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Макет</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "head head head"
+                "nav content bar"
+                "foo foo foo";
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 19em auto 15em;
+            overflow: hidden;
+        }
+
+        .header {
+            grid-area: head;
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav {
+            grid-area: nav;
+            background: #34495e;
+            color: white;
+            padding: 1rem;
+        }
+
+        .content {
+            grid-area: content;
+            background: #ecf0f1;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+
+        .side-bar {
+            grid-area: bar;
+            background: #34495e;
+            color: white;
+            padding: 1rem;
+        }
+
+        .footer {
+            grid-area: foo;
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: #2980b9;
+        }
+
+        .menu-item {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            background: rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Мой Сайт</h1>
+        <div class="nav-buttons">
+            <button class="nav-btn">Главная</button>
+            <button class="nav-btn">О нас</button>
+            <button class="nav-btn">Услуги</button>
+            <button class="nav-btn">Контакты</button>
+        </div>
+    </div>
+
+    <div class="nav">
+        <h3>Навигация</h3>
+        <div class="menu-item">Профиль</div>
+        <div class="menu-item">Сообщения</div>
+        <div class="menu-item">Настройки</div>
+        <div class="menu-item">Помощь</div>
+    </div>
+
+    <div class="content">
+        <h2>Основной контент</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+
+    <div class="side-bar">
+        <h3>Боковая панель</h3>
+        <div class="menu-item">Новости</div>
+        <div class="menu-item">События</div>
+        <div class="menu-item">Статистика</div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Мой Сайт. Все права защищены.</p>
+    </div>
+</body>
+</html>
